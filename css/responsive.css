@@ -1,0 +1,197 @@
+/* tablet (ipad)*/
+
+@media only screen and (max-width: 1347px) {
+
+ul#header-nav li a{
+	padding: 8px 10px;
+}
+.toggle {
+    display: block;
+    width: 80%;
+    text-align: end;
+    margin: auto;
+}
+.consectetur-content{
+	margin-left: 0px;
+}
+
+.toggle i{
+	color: #000;
+	background-color: #fff;
+	font-size: 20px;
+	padding: 10px;
+	border-radius: 2px;
+}
+
+.navbar{
+	display: none;
+	width: 96%;
+	position: absolute;
+	right: 0;
+	left: 0;
+	top: 91px;
+	background-color: #fff;
+
+}
+ul#header-nav {
+    display: flow-root;
+    justify-content: flex-start;
+}
+
+ul#header-nav li a{
+    font-size: 16px;
+    font-weight: 500;
+    font-family: OpenSans;
+    margin:0px 10px; 
+    color: #000; 
+    display: inline-block;
+   
+}
+
+ul#header-nav li{
+	 border-bottom: 1px solid #000;
+	 text-align: center;  
+}
+ul#header-nav li i{
+	color: black;
+}
+.active {
+     border: none; 
+     border-radius: 0px; 
+}
+
+}
+
+/* tablet (ipad)*/
+@media only screen and (max-width: 1024px) {
+
+li.link-list {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+h2.page-title{
+	text-align: center;
+}
+
+.image-box:nth-child(4){
+	display: none;
+}
+
+.image-box {
+    width: calc(31% - 20px);
+    margin: 20px 20px;
+    text-align: center;
+}
+.image-box:nth-child(2){
+	margin: auto 20px;
+}
+.image-box:nth-last-child(2){
+	margin: auto 20px;
+}
+
+}
+
+@media only screen and (max-width: 900px){
+	.image-box:nth-child(4){
+	display: block;
+	content:url("../images/step-arrow-1.png");
+	width: calc(12% - 20px);
+    margin: auto 20px;
+    text-align: center;
+}
+.consectetur-content{
+	margin-left: 0px;
+}
+.image-box:nth-last-child(1){
+	display: ;
+}
+.image-box{
+	width: calc(47% - 20px);
+}
+.toggle{
+	width: 70%;
+}
+
+.about-box{ width: calc(100% - 30px); }
+
+.back-img-left, .back-img-right{ display: none; }
+.consectetur-content{
+	position: unset;
+	flex-flow:  column-reverse;
+}
+.left-text, .right-image{ width: 90%; margin: 0px auto; }
+
+.right-image img{ margin: auto; width: 100%; object-fit: contain; margin-bottom: 50px; }
+h3.sub-title{ text-align: center; }
+p.paragraph{text-align: center;}
+
+.blog-box{ width: 100%; margin-bottom: 30px;}
+.blog-box img{ width: 100%; object-fit: contain; }
+
+ul.blog-meta{ text-align: center; }
+.blog-btn{text-align: center;}
+.client{ width: 100%; margin-bottom: 30px; }
+.client-image{ width: 20%; }
+.client-name p{ text-align: left!important; }
+.msg-img{ width: 10%; }
+
+.client-name{ width: 65%; }
+.bottom p{ text-align: left!important; }
+
+.bottom .blog-btn{ text-align: left; }
+
+.newsletter{ display: flow-root; }
+
+.page-up, .newsletter-form, .conatc-btn{ width: 100%; margin: auto; text-align: center; }
+.newsletter-form{ margin: 20px 0px; }
+
+.footer .logo{ width: 100%; margin: auto;}
+.footer-navbar{ width: 100%; }
+.footer-social{ width: 100%; }
+.footer-before{ display: flow-root; }
+
+.footer .logo img{
+	width: 27%;
+    margin: auto;
+    text-align: center;
+    display: flex;
+}
+.logo{ width: 20%; }
+ul#footer-nav{ margin: 20px 0px; display: flow-root; }
+ul.socail-media{ justify-content: center; }
+ul#footer-nav li {
+	text-align: center;
+	margin-bottom: 10px;
+}
+
+.ok-btn {
+    width: fit-content;
+    margin: 10px auto;
+    display: flex;
+}
+.copright{ display: flow-root; }
+
+.footer-copyright{ width: 100%; }
+.image-box{ width: 100%; }
+
+}
+
+
+
+/* tablet (ipad)*/
+@media only screen and (max-width: 600px) {
+.images-sec{
+	justify-content: center;
+}
+.lorem-text {
+    width: 90%;
+    margin-left: 30px;
+}
+	.image-box:nth-child(4){
+	display: block;
+}
+.image-box:nth-last-child(1){
+	display: block;
+}
+}
