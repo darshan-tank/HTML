@@ -1754,5 +1754,9 @@ select {
     text-align: center;
 }
 
+.page-active {
+    background: #1D7A8C;
+    color: white;
+}
 
 /* Service history End */
