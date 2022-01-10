@@ -274,13 +274,67 @@ hr {
     z-index: 990;
 }
 
+div#liList li input {
+    display: none!important;
+}
+
+div#liList li input:checked+label i {
+    transform: rotate(90deg);
+}
+
+div#liList li input:checked~.display-none {
+    display: block!important;
+    margin-top: 15px;
+}
+
+ul.display-none li {
+    border: none!important;
+}
+
+div#liList li label i {
+    float: right;
+}
+
+ul#header-nav li.hidden input {
+    display: none!important;
+}
+
+ul#header-nav li input:checked+label i {
+    transform: rotate(90deg);
+}
+
+ul#header-nav li input:checked~.display-none {
+    display: block!important;
+    margin-top: 15px;
+}
+
+.hidden label i {
+    margin-left: 5px;
+}
+
+ul.display-none li {
+    border: none!important;
+}
+
+ul#header-nav li label i {
+    float: right;
+}
+
 .header-contain {
     display: flex;
     width: 100%;
     flex-wrap: wrap;
-    padding: 10px 10px 0px 10px;
+    padding: 10px 10px 5px 10px;
     position: fixed;
     top: 0;
+}
+
+li.margin-auto {
+    margin: auto 0px!important;
+}
+
+li.margin-auto p {
+    color: white;
 }
 
 .faq-banner {
@@ -935,6 +989,11 @@ span {
     color: #fff!important;
 }
 
+#banner-list-price li a,
+span {
+    color: #fff!important;
+}
+
 .service-wrapper {
     padding: 50px;
     display: flex;
@@ -982,7 +1041,7 @@ ul#banner-list {
     flex-direction: column;
     flex-wrap: wrap;
     justify-content: flex-start;
-    align-content: center;
+    /* align-content: center; */
     /*margin: auto;*/
     /* width: fit-content; */
 }
@@ -991,7 +1050,30 @@ ul#banner-list li a i {
     color: white;
 }
 
+ul#banner-list-price {
+    /* width: 41%; */
+    /* margin: auto; */
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-content: center;
+    /*margin: auto;*/
+    /* width: fit-content; */
+}
+
+ul#banner-list-price li a i {
+    color: white;
+}
+
 .service-box #banner-list li a,
+span {
+    color: #000!important;
+    font-size: 15px;
+    vertical-align: middle;
+}
+
+.service-box #banner-list-price li a,
 span {
     color: #000!important;
     font-size: 15px;
@@ -1904,51 +1986,8 @@ tr {
     margin: 0;
 }
 
-.rating {
-    display: flex;
-    transform: rotateY(180deg);
-    justify-content: end;
-}
-
-.rating input {
-    display: none;
-}
-
-.rating label.star {
-    display: block;
-    cursor: pointer;
-    width: 20px;
-}
-
-.rating label.star:before {
-    content: "\f005";
-    font-family: fontAwesome!important;
-    position: relative;
-    display: block;
-    font-size: 20px;
-    color: #D4D4D4;
-}
-
-.rating label.star:after {
-    content: "\f005";
-    font-family: fontAwesome!important;
-    position: absolute;
-    display: block;
-    font-size: 20px;
-    color: #ECB91C;
-    top: 0;
-    opacity: 0;
-    transition: .5s;
-}
-
 .selected {
     color: #ECB91C;
-}
-
-.rating label.star:hover:after,
-.rating label.star:hover~label.star:after,
-.rating label.star:checked~label.star:after {
-    opacity: 1;
 }
 
 .tableflex {
@@ -1991,7 +2030,7 @@ b {
     background: #67B644;
     padding: 5px;
     color: white!important;
-    width: 75px;
+    width: 90px;
 }
 
 .status h3 {
@@ -2003,6 +2042,14 @@ b {
     background: #b64444!important;
     padding: 5px;
     width: 75px;
+}
+
+.new {
+    background: #F2BB37;
+}
+
+.pending {
+    background: #1FB6FF;
 }
 
 .rate-button {
@@ -2111,8 +2158,17 @@ select {
     padding: 15px;
     border-bottom: 1px solid #E5E5E5;
     font-family: roboto;
-    display: flex;
-    justify-content: space-between;
+    /* display: flex; */
+    /* justify-content: space-between; */
+}
+
+
+/* [id^=li-col-1]:checked+ul.display-none {
+    display: block!important;
+} */
+
+.display-none {
+    display: none!important;
 }
 
 .flex-left ul i {
@@ -2125,8 +2181,9 @@ select {
     color: #F2F4F5;
 }
 
-.li-active {
-    color: #1FB6FF;
+.li-active,
+.li-active a {
+    color: #1FB6FF!important;
 }
 
 .flex-right-head {
@@ -2174,6 +2231,7 @@ select {
     border-radius: 4px;
     padding: 14px 10px;
     margin-left: 15px;
+    margin-top: 5px;
 }
 
 .flex-right-search input#number {
@@ -2360,8 +2418,25 @@ tr {
 }
 
 .mt-um {
-    margin-top: 68px;
+    margin-top: 50px;
+}
+
+.admin-title {
+    text-transform: none;
+    font-size: 30px;
+    color: white;
+    word-spacing: 1px;
 }
 
 
 /* Admin User Managment End */
+
+
+/* Service-request Start */
+
+#fromdate {
+    background: url('images/calendar2.png');
+}
+
+
+/* Service-request End */

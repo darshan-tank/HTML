@@ -277,6 +277,9 @@
     .faq {
         width: 90%;
     }
+    .icon-button__badge {
+        display: none;
+    }
     .faq-img {
         display: none;
     }
@@ -356,17 +359,17 @@
         overflow-x: scroll;
     }
     .flex-right-search input {
-        width: 96%;
+        width: 90%;
         margin-bottom: 10px;
     }
     input#number {
-        width: 84%;
+        width: 79%;
     }
     select#numberoption {
         width: 12%;
     }
     .flex-right-search button {
-        width: 47%;
+        /* width: 47%; */
         margin-bottom: 10px;
     }
     .toggle-li-menu {
@@ -398,6 +401,9 @@
 }
 
 @media only screen and (max-width: 540px) {
+    .logo {
+        width: 20%;
+    }
     .about-box .zoom {
         width: 50%;
     }
@@ -595,6 +601,30 @@
         color: #000;
         display: inline-block;
     }
+    .margin-auto p {
+        font-size: 16px;
+        font-weight: 500;
+        font-family: Roboto;
+        margin: 0px 10px;
+        color: #000;
+        display: inline-block;
+    }
+    ul#header-nav li label {
+        font-size: 16px;
+        font-weight: 500;
+        font-family: Roboto;
+        margin: 0px 10px;
+        color: #000;
+        display: inline-block;
+        padding: 8px;
+    }
+    ul.display-none {
+        margin: 0px 20px!important;
+        padding: 8px;
+    }
+    ul.display-none li {
+        padding: 8px;
+    }
     .media-li {
         display: block!important;
         float: left;
@@ -603,6 +633,13 @@
     }
     .hidden {
         display: block;
+    }
+    .margin-auto img,
+    p {
+        color: black!important;
+    }
+    .margin-auto img {
+        display: none!important;
     }
     .active {
         border: none;
