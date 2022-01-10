@@ -277,6 +277,9 @@
     .faq {
         width: 90%;
     }
+    .display-block {
+        right: 47%;
+    }
     .icon-button__badge {
         display: none;
     }
@@ -745,5 +748,8 @@
     }
     .footer-table .left-side h3 {
         font-size: 15px;
+    }
+    .display-block {
+        right: 40%;
     }
 }
