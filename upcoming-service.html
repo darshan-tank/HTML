@@ -12,6 +12,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <script src="js/sort.js"></script>
 </head>
 
 <body>
@@ -88,10 +89,10 @@
                             </td>
                         </tr>
                         <tr>
-                            <th>Service ID</th>
-                            <th>Service date</th>
-                            <th colspan="2">Customer details</th>
-                            <th>Distance</th>
+                            <th onclick="sortTable(0,2,2)">Service ID <img src="images/sort.png" alt=""></th>
+                            <th onclick="sortTable(1,2,2)">Service date <img src="images/sort.png" alt=""></th>
+                            <th colspan="2" onclick="sortTable(2,2,2)">Customer details <img src="images/sort.png" alt=""></th>
+                            <th onclick="sortTable(3,2,2)">Distance <img src="images/sort.png" alt=""></th>
                             <th class="action">Actions</th>
                         </tr>
                         <tr>
