@@ -318,6 +318,7 @@ hr {
 .sticky {
     background-color: rgba(39, 39, 39, .7);
     z-index: 990;
+    position:fixed;
 }
 
 div#liList li input {
@@ -371,7 +372,6 @@ ul#header-nav li label i {
     width: 100%;
     flex-wrap: wrap;
     padding: 10px 10px 5px 10px;
-    position: fixed;
     top: 0;
 }
 
@@ -1904,8 +1904,7 @@ p {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-top: 100px;
-    padding-bottom: 40px;
+    padding: 40px 0px;
 }
 
 .header-title-background h2,
