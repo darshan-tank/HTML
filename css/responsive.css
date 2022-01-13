@@ -271,6 +271,9 @@
     .flex-right {
         width: 100%;
     }
+    .tab-bookService .tablinks {
+        flex-direction: column;
+    }
 }
 
 @media only screen and (max-width: 768px) {
@@ -313,6 +316,15 @@
         display: none;
     }
     .table {
+        display: none;
+    }
+    .bookService {
+        width: 90%;
+    }
+    .bookService .accordion-main {
+        width: 100%;
+    }
+    .bookService .right-bs {
         display: none;
     }
 }
@@ -389,6 +401,9 @@
     #liList {
         display: none;
     }
+    .service-wrapper-bs .box-one {
+        width: 20%;
+    }
 }
 
 @media only screen and (max-width: 610px) {
@@ -428,6 +443,9 @@
     .contact-form .login-form .second-field .input-wrapper .call {
         width: 88%;
     }
+    .plan .flex-box {
+        flex-direction: column;
+    }
 }
 
 @media only screen and (max-width: 400px) {
@@ -449,6 +467,12 @@
     }
     input#number {
         width: 82%;
+    }
+    .faq-wrapper .bs h2 {
+        font-size: 25px;
+    }
+    .service-wrapper-bs .box-one {
+        width: 35%!important;
     }
 }
 
@@ -751,5 +775,17 @@
     }
     .display-block {
         right: 40%;
+    }
+}
+
+@media only screen and (max-width: 1190px) {
+    .service-wrapper-bs .box-one {
+        width: 18%;
+    }
+}
+
+@media only screen and (max-width: 880px) {
+    .service-wrapper-bs .box-one {
+        width: 26%;
     }
 }

@@ -80,6 +80,10 @@ body {
     height: auto;
 }
 
+#Table th {
+    cursor: pointer!important;
+}
+
 a {
     text-decoration: none;
 }
@@ -318,7 +322,7 @@ hr {
 .sticky {
     background-color: rgba(39, 39, 39, .7);
     z-index: 990;
-    position:fixed;
+    position: fixed;
 }
 
 div#liList li input {
@@ -372,6 +376,7 @@ ul#header-nav li label i {
     width: 100%;
     flex-wrap: wrap;
     padding: 10px 10px 5px 10px;
+    /* position: ; */
     top: 0;
 }
 
@@ -997,7 +1002,7 @@ ul.socail-media li a {
     text-align: center;
     font-weight: bold;
     line-height: 19px;
-    z-index: -1;
+    z-index: 0;
 }
 
 .main-title h2:before {
@@ -2485,3 +2490,370 @@ tr {
 
 
 /* Service-request End */
+
+
+/* Book Service Start */
+
+.bookService {
+    width: 80%;
+    display: flex;
+    padding-top: 50px;
+    margin: auto;
+    justify-content: space-between;
+}
+
+.tab-bookService {
+    width: 100%;
+    margin: auto;
+    padding-bottom: 30px;
+    display: flex;
+}
+
+.bookService .accordion-main {
+    width: 70%;
+}
+
+.bookService .right-bs {
+    width: 28%;
+    height: fit-content;
+}
+
+.tab-bookService button {
+    display: flex;
+    width: 25%;
+    text-align: center;
+    background-color: #cecece;
+    border-radius: 0px!important;
+    padding: 20px;
+    color: #1D7A8C;
+    font-size: 15px;
+    margin-right: -4px;
+    position: relative;
+    align-items: center;
+}
+
+.tab-bookService .tablinks img {
+    margin-right: 4px;
+}
+
+.tab-bookService button.bookService-active {
+    background-color: #1D7A8C;
+    color: #ffffff;
+    border-color: #1D7A8C;
+}
+
+.tab-bookService button.bookService-active::before {
+    content: '';
+    width: 0;
+    height: 0;
+    border-left: 13px solid transparent;
+    border-right: 13px solid transparent;
+    border-top: 12px solid #1D7A8C;
+    margin: 0px auto;
+    top: 100%;
+    position: absolute;
+    left: 0;
+    right: 0;
+}
+
+.plan h3 {
+    text-transform: none;
+    font-weight: 600;
+    margin: 10px 0px;
+}
+
+.plan select {
+    margin: 10px 5px;
+    padding: 10px;
+    border: 1px solid #E1E1E1;
+}
+
+.plan hr {
+    margin: 20px 0px;
+}
+
+.input-group-cal input[type="date"]::-webkit-inner-spin-button,
+.input-group-cal input[type="date"]::-webkit-calendar-picker-indicator {
+    display: none;
+    -webkit-appearance: none;
+}
+
+.input-group-cal img {
+    margin-right: 5px;
+}
+
+.input-group-cal {
+    padding: 10px;
+    border: 1px solid #e1e1e1;
+    border-radius: 4px;
+    width: fit-content;
+    float: left;
+    margin-top: 10px;
+}
+
+.flex-box {
+    display: flex;
+    justify-content: space-between;
+}
+
+.service-wrapper-bs {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.service-wrapper-bs .box-one input[type="checkbox"] {
+    display: none;
+}
+
+.box-one input[type="checkbox"]:checked+label .circle-image img {
+    border: 3px solid #1d7a8c;
+}
+
+.service-wrapper-bs .box-one h6 {
+    color: #646464;
+}
+
+.plan input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+.button-right {
+    text-align: end;
+}
+
+.plan div.button-right button {
+    padding: 10px;
+    background: #1D7A8C;
+    color: white;
+    font-weight: 600;
+    border-radius: 50px;
+}
+
+.heading {
+    padding: 20px 10px;
+    background: #1d7a8c;
+}
+
+.heading h3 {
+    font-family: roboto!important;
+    color: white;
+}
+
+.content-box {
+    padding: 10px;
+}
+
+.hr-group {
+    height: 2px;
+}
+
+p.bold {
+    font-weight: 600;
+}
+
+.content-box h3 {
+    font-weight: 600;
+}
+
+.content-box p {
+    padding: 8px 0px!important;
+}
+
+p.total {
+    color: #1D7A8C;
+    font-size: 20px;
+    line-height: 40px;
+}
+
+.bold-total {
+    color: #1D7A8C;
+    font-size: 36px;
+    font-weight: 600;
+}
+
+.red-text {
+    color: red!important;
+    font-size: 20px;
+    font-weight: 600;
+    margin-right: 2px;
+}
+
+.popup {
+    cursor: pointer;
+    font-size: 14px!important;
+}
+
+.box-gray {
+    padding: 15px;
+    background: #f3f3f3;
+}
+
+.box-gray img {
+    margin-right: 5px;
+}
+
+.center-news {
+    width: 100%;
+}
+
+.box-shadow {
+    box-shadow: 0 0 10px rgb(0 0 0 / 30%);
+}
+
+button.bookservice-accordion {
+    background: #fff;
+    font-size: 15px;
+    margin: 5px 0px;
+    text-align: left;
+    font-family: 'FontAwesome';
+}
+
+.bookservice-accordion:before {
+    content: '\f105';
+    color: #000;
+    width: 22px;
+    height: 22px;
+    font-weight: bold;
+    float: right;
+    border-radius: 50%;
+    margin-right: 5px;
+    text-align: center;
+    line-height: 18.5px;
+    float: left;
+}
+
+.bookservice-accordion.bookService-active:before {
+    content: "\f107";
+}
+
+.flex-box-1 {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.boxheader {
+    padding: 20px;
+}
+
+.boxheader h2 {
+    text-align: center;
+    font-weight: 600;
+}
+
+.flex-box-1 .questions {
+    border-bottom: 1px solid #9BA0A3;
+}
+
+.flex-box-1 .questions button span,
+p {
+    font-family: roboto!important;
+}
+
+.flex-box-1 a {
+    margin: 15px 0px;
+    color: #1D7A8C;
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.modal {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Sit on top */
+    padding-top: 100px;
+    /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    box-shadow: 0 5px 15px rgb(0 0 0 / 50%);
+    /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4);
+    /* Black w/ opacity */
+}
+
+
+/* Modal Content */
+
+.modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 60%;
+    box-shadow: 0 5px 15px rgb(0 0 0 / 50%);
+    border-radius: 10px;
+}
+
+
+/* The Close Button */
+
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.close1 {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close1:hover,
+.close1:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.content-box button {
+    background: white;
+}
+
+.box-shadow button {
+    width: 100%;
+    cursor: pointer;
+}
+
+.modal-content h2 {
+    font-size: 25px;
+    font-weight: 600;
+    color: #646464;
+    text-transform: none;
+}
+
+.modal-content p {
+    margin-top: 25px;
+    color: #646464;
+}
+
+.modal-content .feature-wrapper {
+    padding: 0px;
+}
+
+.service-wrapper-bs .box-one {
+    width: 14%;
+}
+
+
+/* Book Service End */
